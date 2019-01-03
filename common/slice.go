@@ -4,7 +4,7 @@ import (
 	"reflect"
 )
 
-func in(needle interface{}, haystack interface{}) int {
+func SliceIn(needle interface{}, haystack interface{}) int {
 	nType := reflect.TypeOf(needle)
 	hType := reflect.TypeOf(haystack)
 	if hType.Kind() != reflect.Slice ||
